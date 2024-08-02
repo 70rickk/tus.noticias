@@ -1,0 +1,196 @@
+
+/*
+colores;
+#a0257d
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* estilos generales*/
+/* Profe yo iba a usar una tipografia que descargue que se llama poppins pero al cragar algo de bootstrap automaticamente la anula no sabia como resolver*/
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins';
+    padding: 0;
+    margin: 0;
+    font-size: 17px;
+}
+/*estilos del header*/
+header{
+    padding: 60px;
+    text-align: left;
+    background-color: #566981 ;
+    padding-bottom: 0px;
+    margin: 0;
+    font-family: 'Poppins';
+}
+.header{
+        background-color:rgb(250, 250, 250);
+        color:#566981 ;
+        border-radius: 5px;
+        padding: 20px;
+}
+.container-fluid{
+    background-color: #566981;
+}
+/* estilos del nav*/
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    background-color:#566981 ;
+    flex-wrap: wrap;
+    
+}
+nav a {
+    border-left: 2px solid #ffffffc6;
+    border-right:2px solid #ffffffc6;
+    padding: 0px 15px 0px 15px;
+    color:#ffffffc6; 
+    text-decoration: none;
+    
+}
+/*estilos de imagenes*/
+.imgaside{
+    border: 1px solid #566981;
+    border-radius: 5px;
+    height: 25vw;
+    width: 30vw;
+}
+.imgmain {
+    border: 1px solid #566981;
+    border-radius: 5px;
+    height: 20vw;
+    width: 35vw;
+}
+/*estilos del main*/
+main{
+flex-basis: 70%;
+
+}
+.principal{
+    background-color: #566981;
+    color:#ffffffc6;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    
+
+}
+a{
+    color:#ffffffc6; 
+    text-decoration: none;
+
+}
+.principal a:hover{
+    color: blue;
+}
+aside{
+    display:flex ;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-basis: 30%;
+    text-align: center;
+    margin-right: 3%;
+    background-color: #566981;
+    color: #ffffffc6;
+    padding: 0px 5px 15px 5px;
+    border-right: 10px solid #ffffffe3;
+
+}
+iframe{
+    margin: 10px;
+    width: 30vw;
+    height: 25vw;
+}
+#iframemusic{
+    width: 25vw;
+    height: 20vw;
+    
+}
+
+ul{
+    padding: 5px;
+    margin: 5px;
+}
+.ulaside{
+    list-style-type: none;
+    border-left: 1px solid #ffffffc6;
+    border-right:1px solid #ffffffc6;
+    padding-bottom:0px;
+}
+aside li{
+    padding: 1vw;
+}
+
+section{
+    padding-right: 1em;
+}
+/*estilos del pie de pagina*/
+footer{
+    background-color: #566981;
+    color: #ffffffc6;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+.mb-3{
+    height: 30%;
+    width: 30%;
+}
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .imgaside, .imgmain {
+        width: 80vw;
+        height: auto;
+    }
+
+    .principal {
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    aside {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    iframe {
+        width: 80vw;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    header, .navbar, .principal, footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar {
+        padding: 10px;
+    }
+
+    nav a {
+        padding: 10px;
+    }
+
+    .header {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .imgaside, .imgmain {
+        width: 90vw;
+        height: auto;
+    }
+
+    iframe {
+        width: 90vw;
+        height: auto;
+    }
+}
+
+
